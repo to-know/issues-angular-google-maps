@@ -1,0 +1,47 @@
+<div>
+	<style type="text/css">
+
+        html, body, #map_canvas {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+
+        #map_canvas {
+            position: relative;
+        }
+
+		.button {
+			position: absolute;
+			z-index: 99999;
+			top: 100px;
+			left: 50px;
+		}
+
+        .angular-google-map-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+	</style>
+	<div class="button">
+		<button type="button" class="btn btn-default btn-lg" ng-click="clearPolylines()">
+			Clear Polylines
+		</button>
+		<button type="button" class="btn btn-default btn-lg" ng-click="addPolylines()">
+			Add Polylines
+		</button>
+	</div>
+	<hr>
+	<div>
+	    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options" bounds="map.bounds">
+	        <ui-gmap-polyline ng-repeat="p in polylines" path="p.path" stroke="p.stroke" visible='p.visible'
+	                  geodesic='p.geodesic' fit="false" editable="p.editable" draggable="p.draggable" icons='p.icons'>
+	                  	
+	        </ui-gmap-polyline>
+	    </ui-gmap-google-map>
+	</div>
+
+</div>
