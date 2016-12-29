@@ -1,13 +1,13 @@
 let angular = require('angular');
 
-let mapConfig = require('./config');
-let mapCtrl = require('./map-ctrl');
-let mapTpl = require('html!./map-template.html');
+let config     = require('./issue-config');
+let controller = require('./issue-controller');
+let template   = require('html!./issue-template.html');
 
 angular
 .module('issues')
 .component('issue543', {
-	template: mapTpl,
-	controller: mapCtrl
+	template: template,
+	controller: controller
 })
-.config(mapConfig);
+.config(config);
