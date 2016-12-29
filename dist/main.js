@@ -44,17 +44,25 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {global._ = __webpack_require__(1);
-	let angular = __webpack_require__(3);
+	__webpack_require__(1);
+	module.exports = __webpack_require__(26);
+
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {global._ = __webpack_require__(2);
+	let angular = __webpack_require__(4);
 	
-	__webpack_require__(5);
-	__webpack_require__(10);
+	__webpack_require__(6);
 	__webpack_require__(11);
+	__webpack_require__(12);
 	
-	let routes = __webpack_require__(12);
+	let routes = __webpack_require__(13);
 	
 	// Require issues
-	__webpack_require__(16);
+	__webpack_require__(17);
 	
 	const dependencies = [
 		'uiGmapgoogle-maps',
@@ -69,7 +77,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 1 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -17157,10 +17165,10 @@
 	  }
 	}.call(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(2)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(3)(module)))
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -17176,15 +17184,15 @@
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(4);
+	__webpack_require__(5);
 	module.exports = angular;
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports) {
 
 	/**
@@ -48212,7 +48220,7 @@
 	!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -48223,13 +48231,13 @@
 	 * @date: Tue Jan 26 2016 10:15:01 GMT-0500 (EST)
 	 * @license: MIT
 	 */
-	var angular = __webpack_require__(3);
+	var angular = __webpack_require__(4);
 	
 	angular.module('nemLogging', []);
 	
 	angular.module('nemLogging').provider('nemDebug', function (){
 	  var ourDebug = null;
-	  ourDebug = __webpack_require__(6);
+	  ourDebug = __webpack_require__(7);
 	
 	  this.$get =  function(){
 	    //avail as service
@@ -48364,7 +48372,7 @@
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -48373,7 +48381,7 @@
 	 * Expose `debug()` as the module.
 	 */
 	
-	exports = module.exports = __webpack_require__(8);
+	exports = module.exports = __webpack_require__(9);
 	exports.log = log;
 	exports.formatArgs = formatArgs;
 	exports.save = save;
@@ -48550,10 +48558,10 @@
 	  } catch (e) {}
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -48739,7 +48747,7 @@
 
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -48755,7 +48763,7 @@
 	exports.disable = disable;
 	exports.enable = enable;
 	exports.enabled = enabled;
-	exports.humanize = __webpack_require__(9);
+	exports.humanize = __webpack_require__(10);
 	
 	/**
 	 * The currently active debug mode names, and names to skip.
@@ -48944,7 +48952,7 @@
 
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports) {
 
 	/**
@@ -49099,7 +49107,7 @@
 
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	/*! angular-google-maps 2.4.0 2016-09-19
@@ -63277,7 +63285,7 @@
 	}( window, angular, _));
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
 	/**
@@ -67891,7 +67899,7 @@
 	})(window, window.angular);
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	let routes = ($stateProvider) => {
@@ -67903,15 +67911,15 @@
 		})
 		.state('issues.all', {
 			url: '',
-			template: __webpack_require__(13)
+			template: __webpack_require__(14)
 		})
 		.state('issues.543', {
 			url: '/issues-543',
-			template: __webpack_require__(14)
+			template: __webpack_require__(15)
 		})
 		.state('issues.1040', {
 			url: '/issues-1040',
-			template: __webpack_require__(15)
+			template: __webpack_require__(16)
 		})
 	}
 	
@@ -67919,43 +67927,43 @@
 	module.exports = routes;
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"col-sm-offset-3 col-sm-6\">\r\n\t<h3>Issues</h3>\r\n\t<hr>\r\n\t<div class=\"list-group\">\r\n\t  <a href=\"#\" class=\"list-group-item disabled\">\r\n\t    Issues\r\n\t  </a>\r\n\t  <a ui-sref=\"issues.543\" class=\"list-group-item\">543</a>\r\n\t  <a ui-sref=\"issues.1040\" class=\"list-group-item\">1040</a>\r\n\t</div>\r\n</div>";
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\r\n\t<!-- component app maps -->\r\n\t<issue543></issue543>\r\n</div>";
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\r\n\t<!-- component app maps -->\r\n\t<issue1040></issue1040>\r\n</div>";
 
 /***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	let angular = __webpack_require__(3);
-	
-	angular.module('issues', []);
-	
-	__webpack_require__(17);
-	__webpack_require__(21);
-
-/***/ },
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	let angular = __webpack_require__(3);
+	let angular = __webpack_require__(4);
 	
-	let config     = __webpack_require__(18);
-	let controller = __webpack_require__(19);
-	let template   = __webpack_require__(20);
+	angular.module('issues', []);
+	
+	__webpack_require__(18);
+	__webpack_require__(22);
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	let angular = __webpack_require__(4);
+	
+	let config     = __webpack_require__(19);
+	let controller = __webpack_require__(20);
+	let template   = __webpack_require__(21);
 	
 	angular
 	.module('issues')
@@ -67966,7 +67974,7 @@
 	.config(config);
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports) {
 
 	let config = (uiGmapGoogleMapApiProvider) => 
@@ -67980,7 +67988,7 @@
 	module.exports = config;
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports) {
 
 	class IssueCtrl 
@@ -68081,20 +68089,20 @@
 	module.exports = IssueCtrl;
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\r\n\t<style type=\"text/css\">\r\n\r\n        html, body, #map_canvas {\r\n            height: 100%;\r\n            width: 100%;\r\n            margin: 0px;\r\n        }\r\n\r\n        #map_canvas {\r\n            position: relative;\r\n        }\r\n\r\n\t\t.button {\r\n\t\t\tposition: absolute;\r\n\t\t\tz-index: 99999;\r\n\t\t\ttop: 100px;\r\n\t\t\tleft: 50px;\r\n\t\t}\r\n\r\n        .angular-google-map-container {\r\n            position: absolute;\r\n            top: 0;\r\n            bottom: 0;\r\n            right: 0;\r\n            left: 0;\r\n        }\r\n\t</style>\r\n\t<div class=\"button\">\r\n\t\t<button type=\"button\" class=\"btn btn-default btn-lg\" ng-click=\"clearPolylines()\">\r\n\t\t\tClear Polylines\r\n\t\t</button>\r\n\t\t<button type=\"button\" class=\"btn btn-default btn-lg\" ng-click=\"addPolylines()\">\r\n\t\t\tAdd Polylines\r\n\t\t</button>\r\n\t</div>\r\n\t<hr>\r\n\t<div>\r\n\t    <ui-gmap-google-map center=\"map.center\" zoom=\"map.zoom\" draggable=\"true\" options=\"options\" bounds=\"map.bounds\">\r\n\t        <ui-gmap-polyline ng-repeat=\"p in polylines\" path=\"p.path\" stroke=\"p.stroke\" visible='p.visible'\r\n\t                  geodesic='p.geodesic' fit=\"false\" editable=\"p.editable\" draggable=\"p.draggable\" icons='p.icons'>\r\n\t                  \t\r\n\t        </ui-gmap-polyline>\r\n\t    </ui-gmap-google-map>\r\n\t</div>\r\n\r\n</div>";
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	let angular = __webpack_require__(3);
+	let angular = __webpack_require__(4);
 	
-	let config     = __webpack_require__(22);
-	let controller = __webpack_require__(23);
-	let template   = __webpack_require__(24);
+	let config     = __webpack_require__(23);
+	let controller = __webpack_require__(24);
+	let template   = __webpack_require__(25);
 	
 	angular
 	.module('issues')
@@ -68105,7 +68113,7 @@
 	.config(config);
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports) {
 
 	let config = (uiGmapGoogleMapApiProvider) => 
@@ -68119,7 +68127,7 @@
 	module.exports = config;
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	class IssueCtrl 
@@ -68217,11 +68225,25 @@
 	module.exports = IssueCtrl;
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\r\n\t<style type=\"text/css\">\r\n\r\n        html, body, #map_canvas {\r\n            height: 100%;\r\n            width: 100%;\r\n            margin: 0px;\r\n        }\r\n\r\n        #map_canvas {\r\n            position: relative;\r\n        }\r\n\r\n        .angular-google-map-container {\r\n            position: absolute;\r\n            top: 0;\r\n            bottom: 0;\r\n            right: 0;\r\n            left: 0;\r\n        }\r\n\t</style>\r\n\r\n\t<div>\r\n\t    <ui-gmap-google-map center=\"map.center\" zoom=\"map.zoom\" draggable=\"true\" options=\"map.options\" bounds=\"map.bounds\">\r\n\t        <ui-gmap-markers models=\"locationsFiltered\" coords=\"'self'\" icon=\"'icon'\">\r\n\t        </ui-gmap-markers>\r\n\t    </ui-gmap-google-map>\r\n\t</div>\r\n\r\n</div>";
 
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(27)
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {global._ = __webpack_require__(2);
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=main.js.map

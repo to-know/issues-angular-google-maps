@@ -2,11 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 
 const config = {
-  entry: './src/app.js',
+  entry: {
+    'bundle': './src/app.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   module: {
     rules: [
