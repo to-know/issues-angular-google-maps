@@ -4,30 +4,23 @@ class IssueCtrl
 	{
 		 
 		$scope.locationsFiltered = [
-					{
-						id: 5,
-						latitude: 44.4284821,
-						longitude: 26.1241451,
-						opts: {
-							clickable: false,
-							zIndex: 2
-						},
-						events: {
-							click: (marker, name, model) => {
-								console.log('Hi model ' + model.id);
-							}
-						}
-					},
-					{
-						id: 4,
-						latitude: 43,
-						longitude: 26.1241451,
-						opts: {
-							clickable: false,
-							zIndex: 1
-						}
-					}
-		  ];
+			{
+				id: 5,
+				latitude: 44.4284821,
+				longitude: 26.1241451,
+				opts: {
+					zIndex: 2
+				}
+			},
+			{
+				id: 4,
+				latitude: 43,
+				longitude: 26.1241451,
+				opts: {
+					zIndex: 1
+				}
+			}
+	];
 
 		$scope.map = {
 		  center: {
