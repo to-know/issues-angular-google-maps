@@ -1,4 +1,4 @@
-class MapCtrl 
+class IssueCtrl 
 {
 	constructor($scope, uiGmapGoogleMapApi)
 	{
@@ -92,5 +92,5 @@ class MapCtrl
 	}
 }
 
-MapCtrl.$inject = ['$scope', 'uiGmapGoogleMapApi'];
-module.exports = MapCtrl;
+IssueCtrl.$inject = ['$scope', 'uiGmapGoogleMapApi'];
+module.exports = IssueCtrl;
